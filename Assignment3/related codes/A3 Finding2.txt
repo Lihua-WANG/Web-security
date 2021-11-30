@@ -1,0 +1,10 @@
+------------URL--------------
+http://assignment-zeus.unimelb.life/test/.git/
+
+-----------Python code-----------
+! git config --global user.email"lihuwang@student.unimelb.edu.au"
+! git config --global user.name"Lihua-WANG"
+! git init
+! wget -r http://assignment-zeus.unimelb.life/test/.git
+cd test
+! git log | grep FLAG

